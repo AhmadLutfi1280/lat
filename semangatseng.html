@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat Sayang!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('20240630_160236.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            color: #ffffff;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hai Seng!</h1>
+        <p>Semangat ya untuk hari ini. Aku tahu kamu bisa melakukan yang terbaik. Jangan lupa selalu tersenyum dan ingat bahwa aku selalu mendukungmu!</p>
+        <img src="20240701_081111.png" alt="Chibi Lucu">
+        <button class="btn" onclick="showMessage()">Peluk Virtual</button>
+        <p class="hidden-message" id="virtual-hug">Ini pelukan virtual untukmu! 🤗</p>
+    </div>
+    <audio id="background-music" controls style="display: none;">
+        <source src="Savetik_1719795306.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function showMessage() {
+            document.getElementById('virtual-hug').style.display = 'block';
+            document.getElementById('background-music').play();
+        }
+    </script>
+</body>
+</html>
